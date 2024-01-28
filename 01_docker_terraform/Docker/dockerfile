@@ -1,0 +1,9 @@
+FROM python:3.9.10
+
+WORKDIR /app
+
+COPY ingestions.py ingestions.py
+
+RUN pip install pandas polars psycopg2-binary python-dateutil python-dotenv pyarrow pytz SQLAlchemy typing_extensions tzdata
+
+ENTRYPOINT [ "python", "ingestions.py" ]

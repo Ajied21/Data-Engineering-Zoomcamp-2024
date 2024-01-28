@@ -1,0 +1,31 @@
+version: "3"
+services:
+  postgres-database:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=ajied_dhoifullah
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=nyc_taxi
+    volumes:
+      - "nyc_taxi_postgres_data:/var/lib/postgresql/data:rw"
+    ports:
+      - "5435:5432"
+    networks:
+      - pg-networks
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=ajied@zoomcamp.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8080:80"
+    networks:
+      - pg-networks
+
+networks:
+  pg-networks:
+    name: "DE_zoomcamp_2024"
+
+volumes:
+  nyc_taxi_postgres_data:
