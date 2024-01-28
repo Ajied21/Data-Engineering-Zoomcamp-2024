@@ -13,7 +13,7 @@ docker run \
     --host=postgres-database \
     --file=green_tripdata_2021-01.parquet \
     --table_name=trips_green_taxi \
-    --url=https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2021-01.parquet
+    --url=https://d37ci6vzurychx.cloudfront.net/trip-data/green_tripdata_2019-09.parquet 
 
 # run docker for ingestion data type csv
 
