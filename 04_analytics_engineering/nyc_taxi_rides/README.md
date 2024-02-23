@@ -8,7 +8,7 @@ Try running the following commands:
 - dbt test
 
 #### Workflow
-![image](04_analytics_engineering/images/workflow_dbt.png)
+![image](./04_analytics_engineering/images/workflow_dbt.png)
 
 ### dbt resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
