@@ -8,7 +8,7 @@ Try running the following commands:
 - dbt test
 
 #### Workflow
-![image](https://user-images.githubusercontent.com/4315804/148699280-964c4e0b-e685-4c0f-a266-4f3e097156c9.png)
+![image](./images/workflow_dbt.png)
 
 ### dbt resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
