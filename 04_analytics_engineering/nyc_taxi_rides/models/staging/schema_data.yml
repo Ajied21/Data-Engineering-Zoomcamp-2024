@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dbt-zoomcamp-2024
+    schema: nyc_taxi_zoomcamp
+    tables:
+      - name: fhv_tripdata
+
+models:
+    - name: stg_fhv_tripdata
+
+      columns:
+          - name: dispatching_base_num
+            description: Primary key for this table
+          - name: pickup_datetime
+            description: duration pickup.
+          - name: dropoff_datetime 
+            description: duration dropoff
+          - name: PUlocationID
+            description: The pickup location ID, corresponding to the taxi zone where the taximeter was engaged.
+          - name: DOlocationID 
+            description: The dropoff location ID, corresponding to the taxi zone where the taximeter was disengaged.
+          - name: SR_Flag 
+            description: country
+          - name: Affiliated_base_number
+            description: a business arrangement by which a Vehicle is affiliated or associated with a Base.
