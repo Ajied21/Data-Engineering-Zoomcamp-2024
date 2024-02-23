@@ -7,8 +7,6 @@ Try running the following commands:
 - dbt run
 - dbt test
 
-![image](https://user-images.githubusercontent.com/4315804/152691312-e71b56a4-53ff-4884-859c-c9090dbd0db8.png)
-
 #### Workflow
 ![image](https://user-images.githubusercontent.com/4315804/148699280-964c4e0b-e685-4c0f-a266-4f3e097156c9.png)
 
