@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
  
 with fhv_tripdata as 
 (
@@ -22,8 +22,3 @@ select
 from
 
     fhv_tripdata
-
--- dbt build --select <model.sql> --vars '{'is_test_run: false}'
-{% if var('is_test_run', default=true) %}
-
-{% endif %}

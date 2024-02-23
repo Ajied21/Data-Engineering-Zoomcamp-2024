@@ -25,4 +25,4 @@ from
 inner join 
     dim_zones
 on 
-    fhv_tripdata.PUlocationID = dim_zones.locationid;    
+    fhv_tripdata.PUlocationID = dim_zones.locationid
